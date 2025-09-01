@@ -2,6 +2,8 @@
 #include "esp_sleep.h"
 #include "esphome/core/log.h"
 // #include <Esp.h>
+#include <stdio.h>
+#include "driver/gpio.h"
 
 #ifndef CONFIG_PMU_SDA
 #define CONFIG_PMU_SDA 21
