@@ -7,7 +7,7 @@
 #include "esphome/core/component.h"
 
 #define XPOWERS_CHIP_AXP2101
-#include "XPowersLib.h"
+#include <XPowersLib.h>
 
 namespace esphome {
 namespace axp2101 {
