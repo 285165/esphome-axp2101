@@ -46,9 +46,11 @@ CONFIG_SCHEMA = (
                 unit_of_measurement=UNIT_PERCENT,
                 accuracy_decimals=0,
                 icon=ICON_BATTERY,
+                entity_category=ENTITY_CATEGORY_DIAGNOSTIC,
             ),
             cv.Optional(CONF_BATTERY_CHARGING): binary_sensor.binary_sensor_schema(
                 device_class=DEVICE_CLASS_BATTERY_CHARGING,
+                entity_category=ENTITY_CATEGORY_DIAGNOSTIC,
             ),
             cv.Optional(CONF_BRIGHTNESS, default=1.0): cv.percentage,
         }
