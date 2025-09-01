@@ -1,7 +1,7 @@
 #include "axp2101.h"
 #include "esp_sleep.h"
 #include "esphome/core/log.h"
-#include "gpio.h"
+#include "esp32/gpio.h"
 // #include "arduino-esp32/cores/esp32/Esp.h"
 // #include <Esp.h>
 
