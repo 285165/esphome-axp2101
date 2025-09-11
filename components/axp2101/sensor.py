@@ -66,7 +66,7 @@ def to_code(config):
     yield cg.register_component(var, config)
     yield i2c.register_i2c_device(var, config)
 
-    cg.add_library("XPowersLib", "^0.2.1" )
+    cg.add_library("XPowersLib", "^0.3.0" )
 
     cg.add(var.set_model(config[CONF_MODEL]))
 
