@@ -161,7 +161,7 @@ void AXP2101Component::setup()
 
         break;
       }
-      case AXP2101_M5CORE3:
+      case AXP2101_M5CORES3:
       {
  // Set the minimum common working voltage of the PMU VBUS input,
     // below this value will turn off the PMU
