@@ -215,7 +215,7 @@ void AXP2101Component::setup()
 
     //ALDO1 IMAX=300mA
     //500~3500mV, 100mV/step,31steps
-    PMU.setALDO1Voltage(3300);
+    PMU.setALDO1Voltage(1800);
 
     //ALDO2 IMAX=300mA
     //500~3500mV, 100mV/step,31steps
@@ -223,7 +223,7 @@ void AXP2101Component::setup()
 
     //ALDO3 IMAX=300mA
     //500~3500mV, 100mV/step,31steps
-    // PMU.setALDO3Voltage(3300);
+    PMU.setALDO3Voltage(3300);
 
     //ALDO4 IMAX=300mA
     //500~3500mV, 100mV/step,31steps
@@ -250,18 +250,18 @@ void AXP2101Component::setup()
     // PMU.setDLDO2Voltage(3300);
 
 
-    // PMU.enableDC1();
-    PMU.enableDC2();
-    PMU.enableDC3();
-    PMU.enableDC4();
-    PMU.enableDC5();
+    PMU.enableDC1();
+    PMU.disableDC2();
+    PMU.disableDC3();
+    PMU.disableDC4();
+    PMU.disableDC5();
     PMU.enableALDO1();
     PMU.enableALDO2();
-    PMU.enableALDO3(); // This is the speaker8
+    PMU.enableALDO3(); 
     PMU.enableALDO4();
     PMU.enableBLDO1();
     PMU.enableBLDO2();
-    PMU.enableCPUSLDO();
+    PMU.disableCPUSLDO();
     // PMU.enableDLDO1(); // This is the vibration motor
     // PMU.enableDLDO2();
 
